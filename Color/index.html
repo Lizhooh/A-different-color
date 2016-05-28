@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>A different color</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link href=".../img/favicon.ico" rel="Shortcut Icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/Colorstyle.css" />
+
+    <!--[if lt IE 9]>
+        <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+        <script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div class="nav">
+        <section class="my">
+            <article>
+                <img class="" src="img/my.png" alt="Lizhooh" title="Lizhooh"/>
+                <div class="box">
+                    <a href="">
+                        <img class="githublogo" src="img/github.jpeg" alt="Github" title="Github"/>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <header class="grad" onselectstart="return false;">
+        <div class="text">
+            A different color<br />
+            <font>不同的颜色</font>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="left-Piece"></div>
+
+        <div class="right-Piece">
+            <div class="title">216安全颜色</div>
+            <ul id="free"></ul>
+            <div class="rgba">
+                <div class="pick rgbabox"></div>
+                <label class="left">Rgba:</label>
+                <span class="r">
+                    <font>R(0~255): </font>
+                    <input type="text" id="r" value="255" placeholder="" style="color: orangered;"/>
+                </span>
+                <span class="g">
+                    <font>G(0~255): </font>
+                    <input type="text" id="g" value="255" placeholder="" style="color: limegreen;"/>
+                </span>
+                <span class="b">
+                    <font>B(0~255): </font>
+                    <input type="text" id="b" value="255" placeholder="" style="color: deepskyblue;"/>
+                </span>
+                <span class="a">
+                    <font>A(0.00~1): </font>
+                    <input type="text" id="a" value="1" placeholder="" style="color: hotpink;"/>
+                </span>
+
+                <label class="right">Hex:</label>
+                <span class="hex">
+                    <font>#XXXXXX:</font>
+                    <input type="text" id="hex" value="FFFFFF" placeholder="" style="padding-left: 28px; color: orangered;"/>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <button class="button totop">
+        <span></span>
+        <span>goto顶部</span>
+    </button>
+
+    <button class="button tobottom">
+        <span></span>
+        <span>goto底部</span>
+    </button>
+
+    <!--This is script-->
+    <!--<script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/Colorscript.min.js" ></script>
+    <!--End script-->
+
+    <footer>
+        <div class="footer-text">A different color</div>
+    </footer>
+</body>
+</html>
