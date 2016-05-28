@@ -1,0 +1,871 @@
+html,
+body {
+    min-height: 100%;
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+section {
+    font: normal 20px "microsoft yahei", "arial, helvetica, sans-serif";
+}
+
+section > article {
+    position: absolute;
+    left: 15%;
+    width: 120px;
+    margin: 0;
+    padding: 0;
+}
+
+section img {
+    display: inline-block;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 10px red;
+}
+
+section .box {
+    display: inline-block;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 5px #FF6600;
+}
+
+*::selection {
+    color: white;
+    background-color: #FF6600;
+}
+
+*::-moz-selection {
+    color: white;
+    background-color: #FF6600;
+}
+
+
+/*导航*/
+
+.nav {
+    position: fixed;
+    top: 0px;
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+ul {
+    border: none;
+    margin-left: -30px;
+}
+
+ul > li {
+    display: inline-block;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+
+/*页头*/
+
+header {
+    cursor: default;
+    position: relative;
+    background-color: rgba(255, 165, 0, 0.6);
+    opacity: 0.9;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    -moz-user-select: none;
+    border: none;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+    animation: change 20s ease infinite;
+    animation-delay: 0.5s;
+    -webkit-animation: change 20s ease infinite;
+    -webkit-animation-delay: 0.5s;
+}
+
+header > .text {
+    position: absolute;
+    top: 35%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font: normal 72px "Consolas", Arial, Sans-serif;
+    color: white;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+header > .text > font {
+    font-size: 58px;
+}
+
+.grad {
+    background: -webkit-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+    background: -moz-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+    background: -o-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+    background: linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+    background: -webkit-gradient(linear, 100% 0, 0 0, from(rgba(255, 204, 102, 0.7)), to(rgba(218, 112, 214, 0.8)));
+}
+
+@Keyframes change {
+    0% {
+        background: -webkit-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+        background: -moz-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+        background: -o-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+        background: linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+        background: -webkit-gradient(linear, 100% 0, 0 0, from(rgba(255, 204, 102, 0.7)), to(rgba(218, 112, 214, 0.8)));
+    }
+    25% {
+        background: -webkit-linear-gradient(to top left, rgba(255, 255, 204, 0.7), rgba(255, 153, 102, 0.8));
+        background: -moz-linear-gradient(to top left, rgba(255, 255, 204, 0.7), rgba(255, 153, 102, 0.8));
+        background: -o-linear-gradient(to top left, rgba(255, 255, 204, 0.7), rgba(255, 153, 102, 0.8));
+        background: linear-gradient(to top left, rgba(255, 255, 204, 0.7), rgba(255, 153, 102, 0.8));
+        background: -webkit-gradient(linear, 100% 0, 0 0, from(rgba(255, 255, 204, 0.7)), to(rgba(255, 153, 102, 0.8)));
+    }
+    50% {
+        background: -webkit-linear-gradient(to top left, rgba(255, 102, 0, 0.2), rgba(153, 204, 0, 0.5));
+        background: -moz-linear-gradient(to top left, rgba(255, 102, 0, 0.2), rgba(153, 204, 0, 0.5));
+        background: -o-linear-gradient(to top left, rgba(255, 102, 0, 0.2), rgba(153, 204, 0, 0.5));
+        background: linear-gradient(to top left, rgba(255, 102, 0, 0.2), rgba(153, 204, 0, 0.5));
+        background: -webkit-gradient(linear, 100% 0, 0 0, from(rgba(255, 102, 0, 0.2)), to(rgba(153, 204, 0, 0.5)));
+    }
+    75% {
+        background: -webkit-linear-gradient(to top left, rgba(204, 255, 204, 0.6), rgba(102, 153, 255, 0.7));
+        background: -moz-linear-gradient(to top left, rgba(204, 255, 204, 0.6), rgba(102, 153, 255, 0.7));
+        background: -o-linear-gradient(to top left, rgba(204, 255, 204, 0.6), rgba(102, 153, 255, 0.7));
+        background: linear-gradient(to top left, rgba(204, 255, 204, 0.6), rgba(102, 153, 255, 0.7));
+        background: -webkit-gradient(linear, 100% 0, 0 0, from(rgba(204, 255, 204, 0.6)), to(rgba(102, 153, 255, 0.7)));
+    }
+    100% {
+        background: -webkit-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+        background: -moz-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+        background: -o-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+        background: linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+        background: -webkit-gradient(linear, 100% 0, 0 0, from(rgba(255, 204, 102, 0.7)), to(rgba(218, 112, 214, 0.8)));
+    }
+}
+
+@-webkit-Keyframes change {
+    0% {
+        background: -webkit-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+        background: -moz-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+        background: -o-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+        background: linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+        background: -webkit-gradient(linear, 100% 0, 0 0, from(rgba(255, 204, 102, 0.7)), to(rgba(218, 112, 214, 0.8)));
+    }
+    25% {
+        background: -webkit-linear-gradient(to top left, rgba(255, 255, 204, 0.7), rgba(255, 153, 102, 0.8));
+        background: -moz-linear-gradient(to top left, rgba(255, 255, 204, 0.7), rgba(255, 153, 102, 0.8));
+        background: -o-linear-gradient(to top left, rgba(255, 255, 204, 0.7), rgba(255, 153, 102, 0.8));
+        background: linear-gradient(to top left, rgba(255, 255, 204, 0.7), rgba(255, 153, 102, 0.8));
+        background: -webkit-gradient(linear, 100% 0, 0 0, from(rgba(255, 255, 204, 0.7)), to(rgba(255, 153, 102, 0.8)));
+    }
+    50% {
+        background: -webkit-linear-gradient(to top left, rgba(255, 102, 0, 0.2), rgba(153, 204, 0, 0.5));
+        background: -moz-linear-gradient(to top left, rgba(255, 102, 0, 0.2), rgba(153, 204, 0, 0.5));
+        background: -o-linear-gradient(to top left, rgba(255, 102, 0, 0.2), rgba(153, 204, 0, 0.5));
+        background: linear-gradient(to top left, rgba(255, 102, 0, 0.2), rgba(153, 204, 0, 0.5));
+        background: -webkit-gradient(linear, 100% 0, 0 0, from(rgba(255, 102, 0, 0.2)), to(rgba(153, 204, 0, 0.5)));
+    }
+    75% {
+        background: -webkit-linear-gradient(to top left, rgba(204, 255, 204, 0.6), rgba(102, 153, 255, 0.7));
+        background: -moz-linear-gradient(to top left, rgba(204, 255, 204, 0.6), rgba(102, 153, 255, 0.7));
+        background: -o-linear-gradient(to top left, rgba(204, 255, 204, 0.6), rgba(102, 153, 255, 0.7));
+        background: linear-gradient(to top left, rgba(204, 255, 204, 0.6), rgba(102, 153, 255, 0.7));
+        background: -webkit-gradient(linear, 100% 0, 0 0, from(rgba(204, 255, 204, 0.6)), to(rgba(102, 153, 255, 0.7)));
+    }
+    100% {
+        background: -webkit-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+        background: -moz-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+        background: -o-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+        background: linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
+        background: -webkit-gradient(linear, 100% 0, 0 0, from(rgba(255, 204, 102, 0.7)), to(rgba(218, 112, 214, 0.8)));
+    }
+}
+
+.title {
+    position: relative;
+    font: normal 24px "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 10px 40px;
+    color: rgba(0, 0, 0, 0.8);
+    /*	border: 1px solid red;*/
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    animation: rotates 2s 0ms ease-in-out alternate infinite;
+}
+
+@keyframes rotates {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*内容区*/
+
+.content {
+    width: auto;
+    max-width: 1200px;
+    height: 105%;
+    min-height: 1000px;
+    padding: 0px;
+    margin: 10px auto;
+    /*border: 1px solid blue;*/
+}
+
+.left-Piece {
+    cursor: pointer;
+    float: left;
+    display: inline-block;
+    width: 140px;
+    height: 500px;
+    margin: -10px -10px 10px 5px;
+    /*border: 1px solid black;*/
+}
+
+.button {
+    font: normal 14px "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #666;
+    background-color: #EEE;
+    border-color: #EEE;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 10px;
+    margin: 0;
+    display: inline-block;
+    appearance: none;
+    cursor: pointer;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*-webkit-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;*/
+}
+
+.left-Piece > button {
+    position: relative;
+    font-weight: 500;
+    font-family: "Consolas";
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    margin: 5px;
+    width: 130px;
+    outline: none;
+    /*border: 1px solid #33CCFF;*/
+    box-shadow: 0px 0px 2px #A9A9A9;
+    -webkit-box-shadow: 0px 0px 2px #A9A9A9;
+}
+
+.left-Piece > button::before {
+    position: absolute;
+    top: 30%;
+    left: -30px;
+    content: "";
+    margin-top: -5px;
+    width: 20px;
+    height: 20px;
+    background-color: #FFCC66;
+    border: none;
+    z-index: -1;
+    animation: paly 1.2s 10ms ease-in-out infinite;
+}
+
+
+/*.left-Piece > button::after{
+	position: absolute;
+	bottom: 0px;
+	left: -25px;
+	content: "";
+	width: 5px;
+	height: 40px;
+	background-color: #FF9966;
+	border: none;
+	z-index: -1;
+}*/
+
+.paly {
+    animation: paly 5s 0.5s ease-in-out alternate infinite;
+}
+
+@keyframes paly {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.button:visited {
+    color: #ffcc66;
+}
+
+.button:focus {
+    /*background-color: #FFFFCD;*/
+    outline: none;
+}
+
+.button:active {
+    background-color: #fff;
+}
+
+.button:hover {
+    background-color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+.left-Piece > button:first-of-type {
+    margin-top: 115px;
+}
+
+.right-Piece {
+    /*float: right;*/
+    display: inline-block;
+    margin: 10px;
+    width: 86%;
+    height: auto;
+    /*border: 1px solid orange;*/
+}
+
+
+/*颜色盒子*/
+
+.pick {
+    width: 130px;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px darkgrey;
+    /*box-shadow: 0px 0px 3px darkgrey, 0px 1px 5px darkgrey;
+	-webkit-box-shadow: 0px 0px 3px darkgrey, 0px 1px 5px darkgrey;*/
+    margin: 5px;
+    /*border: 1px solid black;*/
+}
+
+.pick > .box {
+    -moz-user-select: none;
+    overflow: hidden;
+    width: 110px;
+    height: 110px;
+    border-radius: 5%;
+    border: none;
+    box-shadow: 0px 1px 5px darkgrey;
+    -webkit-box-shadow: 0px 1px 5px darkgrey;
+    /*border: 1px solid rgba(0, 0, 0, 0.13);*/
+    margin: 5px auto;
+    padding: 5px;
+}
+
+.pick td {
+    font: normal 14px "Consolas", Arial, Sans-serif;
+    margin: 0 auto;
+    padding: 0px;
+    padding-left: 6px;
+    height: auto;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 100;
+    text-align: center;
+    border: none;
+}
+
+td:first-child {
+    cursor: pointer;
+    font-weight: bold;
+    color: hotpink;
+}
+
+td:first-child:hover {
+    color: red;
+}
+
+.rgba {
+    position: relative;
+    display: none;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    width: 700px;
+    height: 400px;
+    /*border: 1px solid black;*/
+}
+
+.rgba span {
+    position: relative;
+    padding: 0px;
+    margin-left: 25px;
+    display: block;
+}
+
+.rgba > span > input[type='text'] {
+    font: normal 20px "Consolas", "arial, helvetica, sans-serif";
+    color: #33CCEE;
+    display: inline-block;
+    border: none;
+    height: 30px;
+    width: 100px;
+    margin: 10px;
+    padding: 0px 15px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 3px #999999;
+    -webkit-box-shadow: 0px 0px 3px #999999;
+    background-color: white;
+}
+
+.rgba > span > input[type='text']:focus {
+    box-shadow: 0px 0px 3px red;
+    -webkit-box-shadow: 0px 0px 3px red;
+    outline: none;
+}
+
+.rgba > span > font {
+    font: normal 16px "Consolas", "arial, helvetica, sans-serif";
+    display: inline-block;
+    height: 25px;
+    width: 120px;
+    line-height: 30px;
+    text-align: right;
+    /*word-break: keep-all;
+	white-space: nowrap;*/
+    /*border: 1px solid black;*/
+}
+
+.rgba > span.hex::before {
+    font: normal 20px "Consolas", "arial, helvetica, sans-serif";
+    content: "#";
+    position: absolute;
+    top: 15px;
+    left: 150px;
+    color: black;
+}
+
+.rgbabox {
+    width: 180px;
+    position: absolute;
+    top: 60px;
+    right: 120px;
+    z-index: -10;
+}
+
+.rgbabox span {
+    font: normal 20px "Consolas", "arial, helvetica, sans-serif";
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.rgbabox > .box {
+    width: 160px;
+    height: 160px;
+}
+
+.rgba label {
+    font: normal 32px "Consolas", "arial, helvetica, sans-serif";
+    display: block;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.rgba > .left {
+    margin-left: 10px;
+    text-align: right;
+    width: 100px;
+}
+
+.rgba > .right {
+    margin-left: 10px;
+    text-align: right;
+    width: 100px;
+}
+
+
+/*回到顶部*/
+
+.totop {
+    position: fixed;
+    right: 30px;
+    bottom: 35%;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    /*box-shadow: 0px 1px 5px darkgrey;
+	-webkit-box-shadow: 0px 1px 5px darkgrey;*/
+}
+
+.totop:focus {
+    background-color: transparent;
+}
+
+.totop > span {
+    position: absolute;
+    overflow: hidden;
+    top: -10px;
+    left: 2px;
+    width: 0px;
+    height: 0px;
+    border: 18px solid transparent;
+    border-bottom-color: #FF69B4;
+    z-index: -1;
+}
+
+.totop > span:last-of-type {
+    position: absolute;
+    left: -10px;
+    top: 40px;
+    display: block;
+    font: normal 12px "微软雅黑", Arial, Sans-serif;
+    background-color: white;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: none;
+    box-shadow: 0px 1px 6px darkgrey;
+    -webkit-box-shadow: 0px 1px 6px darkgrey;
+}
+
+.totop > span:first-of-type:hover {
+    border: 18px solid transparent;
+    border-bottom-color: #33CCFF;
+}
+
+
+/*回到底部*/
+
+.tobottom {
+    position: fixed;
+    right: 30px;
+    bottom: 20%;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    /*box-shadow: 0px 1px 5px darkgrey;
+	-webkit-box-shadow: 0px 1px 5px darkgrey;*/
+}
+
+.tobottom:focus {
+    background-color: transparent;
+}
+
+.tobottom > span {
+    position: absolute;
+    overflow: hidden;
+    top: 15px;
+    left: 2px;
+    width: 0px;
+    height: 0px;
+    border: 18px solid transparent;
+    border-top-color: #FF69B4;
+    z-index: -1;
+}
+
+.tobottom > span:last-of-type {
+    position: absolute;
+    left: -10px;
+    top: -32px;
+    display: block;
+    font: normal 12px "微软雅黑", Arial, Sans-serif;
+    background-color: white;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: none;
+    box-shadow: 0px 1px 6px darkgrey;
+    -webkit-box-shadow: 0px 1px 6px darkgrey;
+}
+
+.tobottom > span:first-of-type:hover {
+    border: 18px solid transparent;
+    border-top-color: #33CCFF;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #FFCC00;
+    margin: 0px;
+    margin-bottom: -12px;
+}
+
+.footer-text {
+    font: normal 20px "microsoft yahei", "arial, helvetica, sans-serif";
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.3);
+    margin: 0px;
+}
+
+
+/*自适应*/
+
+@media screen and (max-width : 1124px) {
+    header {
+        height: 260px;
+    }
+    header > .text {
+        top: 45%;
+        font-size: 42px;
+    }
+    header > .text > font {
+        font-size: 36px;
+    }
+    .left-Piece {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: -100px 5px 20px 20px;
+    }
+    .right-Piece {
+        margin: 0 auto;
+        width: auto;
+    }
+    .pick > .box {
+        height: 25px;
+    }
+    .pick td {
+        font-size: 13px;
+    }
+    .rgba {
+        width: auto;
+    }
+    .rgbabox {
+        width: 180px;
+        margin-top: -60px;
+        margin-bottom: 16px;
+        margin-left: 70px;
+        position: static;
+    }
+    .left-Piece > button::before {
+        display: none;
+        animation-play-state: paused;
+    }
+    .left-Piece > button::after {
+        display: none;
+        animation-play-state: paused;
+    }
+    .totop,
+    .tobottom {
+        right: -19px;
+    }
+    .totop > span:last-of-type,
+    .tobottom >span:last-of-type {
+        display: none;
+    }
+    footer {
+        font: normal 12px Arial, sans-serif;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    header {
+        height: 260px;
+    }
+    header > .text {
+        top: 45%;
+        font-size: 42px;
+    }
+    header > .text > font {
+        font-size: 36px;
+    }
+    .left-Piece {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: -100px 5px 20px 20px;
+    }
+    .right-Piece {
+        margin: 0 auto;
+        width: auto;
+    }
+    .pick > .box {
+        height: 25px;
+    }
+    .pick td {
+        font-size: 13px;
+    }
+    .rgba {
+        width: auto;
+    }
+    .rgbabox {
+        width: 180px;
+        margin-top: -60px;
+        margin-bottom: 16px;
+        margin-left: 70px;
+        position: static;
+    }
+    .left-Piece > button::before {
+        display: none;
+        animation-play-state: paused;
+    }
+    .left-Piece > button::after {
+        display: none;
+        animation-play-state: paused;
+    }
+    .totop,
+    .tobottom {
+        right: -19px;
+    }
+    .totop > span:last-of-type,
+    .tobottom >span:last-of-type {
+        display: none;
+    }
+    footer {
+        font: normal 12px Arial, sans-serif;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    header {
+        height: 260px;
+    }
+    header > .text {
+        top: 45%;
+        font-size: 42px;
+    }
+    header > .text > font {
+        font-size: 36px;
+    }
+    .left-Piece {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: -100px 5px 20px 20px;
+    }
+    .right-Piece {
+        margin: 0 auto;
+        width: auto;
+    }
+    .pick > .box {
+        height: 25px;
+    }
+    .pick td {
+        font-size: 13px;
+    }
+    .rgba {
+        width: auto;
+    }
+    .rgbabox {
+        width: 180px;
+        margin-top: -60px;
+        margin-bottom: 16px;
+        margin-left: 70px;
+        position: static;
+    }
+    .left-Piece > button::before {
+        display: none;
+        animation-play-state: paused;
+    }
+    .left-Piece > button::after {
+        display: none;
+        animation-play-state: paused;
+    }
+    .totop,
+    .tobottom {
+        right: -19px;
+    }
+    .totop > span:last-of-type,
+    .tobottom >span:last-of-type {
+        display: none;
+    }
+    footer {
+        font: normal 12px Arial, sans-serif;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    header {
+        height: 260px;
+    }
+    header > .text {
+        top: 45%;
+        font-size: 42px;
+    }
+    header > .text > font {
+        font-size: 36px;
+    }
+    .left-Piece {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: -100px 5px 20px 20px;
+    }
+    .right-Piece {
+        margin: 0 auto;
+        width: auto;
+    }
+    .pick > .box {
+        height: 25px;
+    }
+    .pick td {
+        font-size: 13px;
+    }
+    .rgba {
+        width: auto;
+    }
+    .rgbabox {
+        width: 180px;
+        margin-top: -60px;
+        margin-bottom: 16px;
+        margin-left: 70px;
+        position: static;
+    }
+    .left-Piece > button::before {
+        display: none;
+        animation-play-state: paused;
+    }
+    .left-Piece > button::after {
+        display: none;
+        animation-play-state: paused;
+    }
+    .totop,
+    .tobottom {
+        right: -19px;
+    }
+    .totop > span:last-of-type,
+    .tobottom >span:last-of-type {
+        display: none;
+    }
+    footer {
+        font: normal 12px Arial, sans-serif;
+    }
+}
