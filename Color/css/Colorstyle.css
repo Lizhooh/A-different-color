@@ -6,10 +6,12 @@ body {
     margin: 0px;
     padding: 0px;
     outline: none;
+
+
 }
 
 a{
-	text-decoration: none;
+    text-decoration: none;
 }
 
 section {
@@ -53,7 +55,6 @@ section .box {
 
 
 /*导航*/
-
 .nav {
     position: fixed;
     top: 0px;
@@ -80,7 +81,6 @@ ul > li {
 
 
 /*页头*/
-
 header {
     cursor: default;
     position: relative;
@@ -118,6 +118,12 @@ header > .text > font {
 }
 
 .grad {
+    -webkit-transform: rotateZ(0);
+    -moz-transform: rotateZ(0);
+    -ms-transform: rotateZ(0);
+    -o-transform: rotateZ(0);
+    transform: rotateZ(0);
+
     background: -webkit-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
     background: -moz-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
     background: -o-linear-gradient(to top left, rgba(255, 204, 102, 0.7), rgba(218, 112, 214, 0.8));
@@ -234,7 +240,6 @@ header > .text > font {
 
 
 /*内容区*/
-
 .content {
     width: auto;
     max-width: 1200px;
@@ -242,7 +247,6 @@ header > .text > font {
     min-height: 1000px;
     padding: 0px;
     margin: 10px auto;
-    /*border: 1px solid blue;*/
 }
 
 .left-Piece {
@@ -252,7 +256,6 @@ header > .text > font {
     width: 140px;
     height: 500px;
     margin: -10px -10px 10px 5px;
-    /*border: 1px solid black;*/
 }
 
 .button {
@@ -274,10 +277,6 @@ header > .text > font {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /*-webkit-transition-property: all;
-	transition-property: all;
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;*/
 }
 
 .left-Piece > button {
@@ -289,7 +288,6 @@ header > .text > font {
     margin: 5px;
     width: 130px;
     outline: none;
-    /*border: 1px solid #33CCFF;*/
     box-shadow: 0px 0px 2px #A9A9A9;
     -webkit-box-shadow: 0px 0px 2px #A9A9A9;
 }
@@ -327,7 +325,6 @@ header > .text > font {
 }
 
 .button:focus {
-    /*background-color: #FFFFCD;*/
     outline: none;
 }
 
@@ -346,39 +343,32 @@ header > .text > font {
 }
 
 .right-Piece {
-    /*float: right;*/
     display: inline-block;
     margin: 10px;
     width: 86%;
     height: auto;
-    /*border: 1px solid orange;*/
 }
 
 
 /*颜色盒子*/
-
 .pick {
-    width: 130px;
+    width: 125px;
     height: auto;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0px 1px 5px darkgrey;
-    /*box-shadow: 0px 0px 3px darkgrey, 0px 1px 5px darkgrey;
-	-webkit-box-shadow: 0px 0px 3px darkgrey, 0px 1px 5px darkgrey;*/
     margin: 5px;
-    /*border: 1px solid black;*/
 }
 
 .pick > .box {
     -moz-user-select: none;
     overflow: hidden;
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     border-radius: 5%;
     border: none;
     box-shadow: 0px 1px 5px darkgrey;
     -webkit-box-shadow: 0px 1px 5px darkgrey;
-    /*border: 1px solid rgba(0, 0, 0, 0.13);*/
     margin: 5px auto;
     padding: 5px;
 }
@@ -506,7 +496,6 @@ td:first-child:hover {
 
 
 /*回到顶部*/
-
 .totop {
     position: fixed;
     right: 20px;
@@ -516,8 +505,6 @@ td:first-child:hover {
     background-color: transparent;
     border-radius: 50%;
     border: none;
-    /*box-shadow: 0px 1px 5px darkgrey;
-	-webkit-box-shadow: 0px 1px 5px darkgrey;*/
 }
 
 .totop:focus {
@@ -559,7 +546,6 @@ td:first-child:hover {
 
 
 /*回到底部*/
-
 .tobottom {
     position: fixed;
     right: 20px;
@@ -569,8 +555,6 @@ td:first-child:hover {
     background-color: transparent;
     border-radius: 50%;
     border: none;
-    /*box-shadow: 0px 1px 5px darkgrey;
-	-webkit-box-shadow: 0px 1px 5px darkgrey;*/
 }
 
 .tobottom:focus {
